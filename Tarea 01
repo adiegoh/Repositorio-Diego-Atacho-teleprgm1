@@ -1,1 +1,2 @@
-
+vnombrec="Diego Alejandro Atacho Hernandez"
+print('Hola Prog1', 'soy', vnombrec)
