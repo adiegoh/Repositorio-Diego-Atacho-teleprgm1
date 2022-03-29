@@ -1,0 +1,15 @@
+#Tupla de un solo elemento
+vtuplaunica = ('Hola',)
+#tiene la particularidad de que debe contener al menos una coma (,) para que Python la reconozca como una tupla
+
+#Eliminando las ocurrencias del entero 10 en la siguiente lista
+vedades = [2,7,58,7,45,26,10,8,56,57,97,19,11,53,3,99,62,78,29,9,37,42,56,86,28,86,95,26,49,67,21,815,67,10,58,512,24,92,89,67,53,10,9,83,1,44,10,77,10,98,73,57]
+
+print(vedades, '\n')
+
+for item in vedades:
+  if item ==10:
+    print(f'Removiendo: \'{item}\' por ser igual a 10')
+    vedades.remove(item)
+
+print('\n', vedades)
