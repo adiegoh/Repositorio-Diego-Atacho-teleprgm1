@@ -1,0 +1,54 @@
+#5.1 Defina una función en python que acepte el radio y devuelva el valor del area de un círculo de esas dimensiones. (4pts)
+
+def area(radio):
+    pi = 3.14159265359
+    r = int(radio)
+    return pi * (r ** 2)
+def main():
+    radio = input('Ingrese el radio del circulo en centimetros: ')
+    print(f' El area del circulo de radio {radio} cm es de = {area(radio)} cm^2')
+if __name__ == '__main__':
+    main()
+_______________________________________________________________
+#5.2 Defina una función en python que acepte 3 valores y devuelva solo el maximo de los tres. (7pts)
+
+import random
+lista = []
+cantidad_de_elementos = 15
+for i in range(cantidad_de_elementos):
+    lista.append(random.randint(1, 100))
+def suma():
+    sumaTotal = 0
+    for elemento in lista:
+         if elemento % 2 != 0:
+            sumaTotal = sumaTotal + elemento
+    return sumaTotal
+def main():
+    print(f'Lista = {lista}')
+    print(f'Suma de todos los valores impares de la lista es = {suma()}')
+if __name__ == '__main__':
+    main()
+
+_______________________________________________________________
+#5.3 Dado una lista de enteros, defina una función en python que devuelva la suma de solo los valores impares de dicha lista. (7pts)
+
+def valor_maximo(valor1, valor2, valor3):
+    valor1 = int(valor1)
+    valor2 = int(valor2)
+    valor3 = int(valor3)
+    if (valor1 > valor2 and valor1 > valor3):
+        return valor1
+    elif (valor2 > valor1 and valor2 > valor3):
+        return valor2
+    elif (valor3 > valor1 and valor3 > valor2):
+        return valor3
+def main():
+    x = input('Ingrese el Valor 1:')
+    y = input('Ingrese el Valor 2:')
+    z = input('Ingrese el valor 3:')
+
+    print(f'El maximo valor entre los tres es = {valor_maximo(x, y, z)}')
+
+
+if __name__ == '__main__':
+    main()
